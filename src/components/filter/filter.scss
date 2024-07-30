@@ -1,0 +1,71 @@
+@import "../../variable.scss";
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h1 {
+    font-weight: 300;
+    font-style: 20px;
+  }
+
+  .top {
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      label {
+        font-size: 12px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      label {
+        font-size: 12px;
+      }
+
+      input,
+      select {
+        width: 60px;
+        padding: 10px;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+
+    button {
+      width: 60px;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      background-color: $main-button-bg;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

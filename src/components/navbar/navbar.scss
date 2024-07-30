@@ -1,4 +1,5 @@
-@import "/src/layout.scss";
+@import "../../layout/layout.scss";
+@import "../../variable.scss";
 
 nav {
   display: flex;
@@ -44,7 +45,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #fcf5f3;
+    background-color: $righ-sidepage-bg;
     height: 100%;
 
     @include md {
@@ -57,7 +58,7 @@ nav {
     }
 
     .register {
-      background-color: #fece51;
+      background-color: $main-button-bg;
       border-radius: 5px;
     }
 

@@ -1,4 +1,5 @@
 @import "../../reponsive.scss";
+@import "../../variable.scss";
 
 .searchBar {
   .type {
@@ -64,7 +65,7 @@
     button {
       border: none;
       cursor: pointer;
-      background-color: #fece51;
+      background-color: $main-button-bg;
       padding: 10px;
       display: flex;
       justify-content: center;
