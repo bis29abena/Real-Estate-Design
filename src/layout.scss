@@ -1,0 +1,29 @@
+@import "./reponsive.scss";
+
+.layout {
+  height: 100vh;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include lg {
+    // background-color: rgb(225, 209, 241);
+    max-width: 1000px;
+  }
+
+  @include md {
+    // background-color: rgb(189, 189, 230);
+    max-width: 668px;
+  }
+
+  @include sm {
+    // background-color: rgb(235, 194, 194);
+    max-width: 540px;
+  }
+
+  .content {
+    height: calc(100vh - 50px);
+  }
+}
