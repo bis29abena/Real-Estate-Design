@@ -1,6 +1,6 @@
 import React from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
-import { listDataObject } from "../../lib/dummyData";
+import { listDataObject, singleDataObject } from "../../lib/dummyData";
 
 import "./map.scss";
 import "leaflet/dist/leaflet.css";
@@ -8,7 +8,7 @@ import Pin from "../pin/Pin";
 import ListPage from "../../pages/listpage/ListPage";
 
 type ItemsArrayProps = {
-  item: Array<listDataObject>;
+  item: Array<listDataObject> | Array<singleDataObject>;
 };
 ListPage;
 
