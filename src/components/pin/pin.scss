@@ -1,20 +1,17 @@
-.pin{
-    .popContainer{
-        display: flex;
-        gap: 20px
+.popContainer {
+  display: flex;
+  gap: 20px;
 
-        img{
-            width: 64px;
-            height: 48px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
+  img {
+    width: 64px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
 
-        .textContianer{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-    }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

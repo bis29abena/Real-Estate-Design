@@ -1,0 +1,86 @@
+@import "../../variable.scss";
+
+.single {
+  display: flex;
+  height: 100%;
+
+  .details {
+    flex: 3;
+
+    .wrapper {
+      padding-right: 30px;
+
+      .info {
+        margin-top: 10px;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+
+          .post {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h1 {
+              font-weight: 150;
+            }
+            .address {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              color: #888;
+              font-size: 14px;
+
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .price {
+              padding: 5px;
+              background-color: $main-button-bg;
+              border-radius: 5px;
+              width: max-content;
+              font-size: 18px;
+              font-weight: 300;
+            }
+          }
+
+          .user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 0 35px;
+            border-radius: 10px;
+            background-color: $main-button-bg;
+            font-weight: 600;
+
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+        }
+        .bottom {
+            margin-top: 20px;
+            color: #555;
+            line-height: 18px;
+        }
+      }
+    }
+  }
+
+  .features {
+    flex: 2;
+    background-color: $righ-sidepage-bg;
+
+    .wrapper {
+      padding: 0px 20px;
+    }
+  }
+}
