@@ -1,8 +1,11 @@
 import { useState } from "react";
 
 import "./navbar.scss";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const user: boolean = true;
+
   const [open, setOpen] = useState<boolean>(false);
   return (
     <nav>
@@ -16,10 +19,26 @@ export default function Navbar() {
         <a href="/">Agents</a>
       </div>
       <div className="right">
-        <a href="/">Sign up</a>
-        <a href="/" className="register">
-          Sign in
-        </a>
+        {user ? (
+          <div className="user">
+            <img
+              src="https://avatars.githubusercontent.com/u/25677518?v=4"
+              alt=""
+            />
+            <span>John Doe</span>
+            <Link to="/profile" className="profile">
+              <div className="notification">3</div>
+              <span>Profile</span>
+            </Link>
+          </div>
+        ) : (
+          <>
+            <a href="/">Sign up</a>
+            <a href="/" className="register">
+              Sign in
+            </a>
+          </>
+        )}
         <div className="menuicon">
           <img
             src="/img/menu.png"
