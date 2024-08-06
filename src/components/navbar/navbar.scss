@@ -129,6 +129,10 @@ nav {
         border: none;
         position: relative;
 
+        @include md{
+          display: none;
+        }
+
         .notification {
           position: absolute;
           top: -8px;
@@ -142,6 +146,11 @@ nav {
           display: flex;
           align-items: center;
           justify-content: center;
+
+          // @include md {
+          //   top: -3px;
+          //   right: -3px;
+          // }
         }
       }
     }

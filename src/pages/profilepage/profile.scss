@@ -1,0 +1,82 @@
+@import "../../variable.scss";
+@import "../../reponsive.scss";
+
+.profile {
+  display: flex;
+  height: 100%;
+
+  @include md{
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .details {
+    flex: 3;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+
+    @include md{
+      flex: none;
+      height: max-content;
+    }
+
+    .wrapper {
+      padding-right: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+          font-weight: 300;
+        }
+
+        button {
+          padding: 12px 24px;
+          background-color: $main-button-bg;
+          cursor: pointer;
+          border: none;
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .chatContainer {
+    flex: 2;
+    height: 100%;
+    background-color: $righ-sidepage-bg;
+
+    @include md{
+      flex: none;
+      height: max-content;
+    } 
+
+    .wrapper {
+      padding: 0px 15px;
+      height: 100%;
+    }
+  }
+}
